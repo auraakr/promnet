@@ -6,70 +6,85 @@
 <body>
     <center>
         <nav>
-            <a href="content.html">Content</a>
-            <a href="galeri.html">Galeri</a>
-            <a href="about.html">Tentang</a>
-            <a href="form-registrasi.html">Registrasi Disini</a>
+            <a href="index.html">Home</a>
+            <a target="_blank" href="https://music.youtube.com/playlist?list=PLjtUA20YWjSPo3-rqhBBa_Ur42ce6laVW&si=nWdJbK2SWY6jzNlz">My Playlist</a>
+            <a href="tentang.html">Tentang</a>
         </nav>
     </center>
 
-    <section>
-        <h1>Personal Website</h1>
-        <img src="images/kemakom.jpg" alt="gambar diri">
+    <section id="home">
+        <h1>Aura's Website</h1>
+        <img src="images/kemakom.jpg" alt="Profil Aura Putri Kireina">
         <p>
-            Halo, nama saya Aura Putri Kireina. Sejak kecil saya memiliki hobi membaca buku dan bermain game.
+            Halo, nama saya Aura Putri Kireina. Sejak kecil saya memiliki hobi membaca buku dan bermain game. <br>
             Kini saya sedang menempuh pendidikan tinggi di Pendidikan Ilmu Komputer di Universitas Pendidikan Indonesia.
             Ini adalah halaman website saya. 
         </p>
         <div>
             <a href="https://github.com/auraakr" target="_blank">Lihat Portofolio</a>
-            <a href="about.html">Kontak Saya</a>
+            <a href="tentang.html">Kontak Saya</a>
         </div>
     </section>
 
-    <section>
+    <section id="hobi">
         <h1>Tabel Data Diri</h1>
-        <table>
+        <table border="1">
             <thead>
                 <td>No.</td>
                 <td>Nama</td>
-                <td>File</td>
-                <td>Tanggal</td>
+                <td>Umur</td>
+                <td>Hobi</td>
             </thead>
             <tbody>
-                <td>1</td>
-                <td>Modul Pembelajaran Struktur Data</td>
-                <td><a href=""></a></td>
-                <td>08-09-2025</td>
+                <tr>
+                    <td>1</td>
+                    <td>Citra Syavira</td>
+                    <td>19</td>
+                    <td>Bermain roblox</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Nur Azizah</td>
+                    <td>19</td>
+                    <td>Mendaki gunung</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Siti Ayu</td>
+                    <td>19</td>
+                    <td>Menonton sinetron</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Misyel Azahra</td>
+                    <td>19</td>
+                    <td>Menonton drama korea</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Rianti Agustini</td>
+                    <td>19</td>
+                    <td>Olahraga Basket</td>
+                </tr>
             </tbody>
         </table>
     </section>
 
+    <hr>
     <footer>
-        <table>
-            <thead>
-                <td>Quick Links</td>
-                <td>Socials</td>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="index.html">Home</a></td>
-                    <td><a href="">Whatsapp</a></td>
-                </tr>
-                <tr>
-                    <td><a href="about.html">Tentang</a></td>
-                    <td><a href="">Instagram</a></td>
-                </tr>
-                <tr>
-                    <td><a href="galeri.html">Galeri</a></td>
-                    <td><a href="">LinkedIn</a></td>
-                </tr>
-                <tr>
-                    <td><a href="content.html">Content</a></td>
-                    <td><a href="">Github</a></td>
-                </tr>
-            </tbody>
-        </table>
+        <h2>Form kirim komentar</h2>
+        <form action="#">
+            <fieldset>
+                <legend>Kirim komentar</legend>
+                <label for="nama">Nama</label><br>
+                <input type="text" id="nama" name="nama" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="komentar">Kirim komentar</label><br>
+                <textarea name="komentar" id="komentar" placeholder="Ketik disini..."></textarea><br>
+                <button type="submit">Kirim</button>
+            </fieldset>
+        </form>
     </footer>
 </body>
 </html>
