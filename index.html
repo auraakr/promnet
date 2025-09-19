@@ -6,7 +6,7 @@
 </head>
 <body>
     <nav class="flex">
-        <h1 class="title">Aura's Website</h1>
+        <h1 class="nav-title">Aura's Website</h1>
         <div class="">
             <a href="index.html">Home🏡</a>
             <a target="_blank" href="https://music.youtube.com/playlist?list=PLjtUA20YWjSPo3-rqhBBa_Ur42ce6laVW&si=nWdJbK2SWY6jzNlz">Music🎶</a>
@@ -17,8 +17,8 @@
 
     <section id="home" class="flex">
         <div class="flex links">
-            <a href="https://github.com/auraakr" target="_blank">Lihat Portofolio 🤞</a>
-            <a href="tentang.html">Kontak Saya 🔔</a>
+            <a class="btn" href="https://github.com/auraakr" target="_blank">Lihat Portofolio 🤞</a>
+            <a class="btn" href="tentang.html">Kontak Saya 🔔</a>
         </div>
         <img src="images/Aspirasi-Aura.jpg" alt="Profil Aura Putri Kireina">
         <p>
@@ -29,8 +29,8 @@
     </section>
 
     <section id="hobi">
-        <h1>🧗‍♀️🏂Tabel Hobi Teman</h1>
-        <table border="1" width="100%">
+        <h1 class="title">🧗‍♀️🏂Tabel Hobi Teman</h1>
+        <table>
             <thead>
                 <td>No.</td>
                 <td>Nama</td>
@@ -72,17 +72,16 @@
         </table>
     </section>
 
-    <hr>
-    <footer>
-        <h2>📭 Form kirim komentar</h2>
-        <form action="#">
+    <footer style="padding: 30px 10px;">
+        <h2 style="text-align: center;" class="title">📭 Form kirim komentar</h2>
+        <form style="margin-top: 35px;" action="#">
             <fieldset>
-                <legend>Kirim komentar</legend>
-                <label for="nama">Nama</label><br>
-                <input type="text" id="nama" name="nama" required><br><br>
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="komentar">Kirim komentar</label><br>
+                <legend class="title">Kirim komentar</legend>
+                <label for="nama">Nama</label>
+                <input placeholder="Masukkan nama" type="text" id="nama" name="nama" required>
+                <label for="email">Email</label>
+                <input placeholder="Masukkan email" type="email" id="email" name="email" required>
+                <label for="komentar">Kirim komentar</label>
                 <textarea name="komentar" id="komentar" placeholder="Ketik disini..." required></textarea><br>
                 <button type="submit">Kirim</button>
             </fieldset>
