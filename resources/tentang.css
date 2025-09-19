@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-gray-300: hsl(240 4.9% 83.9%);
+    --color-gray-400: hsl(240 5% 64.9%);
+    --color-text: #0d0c22
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-text);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: "Caveat", cursive;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.nav-title {
+    font-family: "Caveat", cursive;
+    font-size: 16px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+nav {
+    padding: 15px 10px;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        gap: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--color-text);
+    }
+
+    a:hover {
+        color: var(--color-gray-400);
+    }
+
+    .btn {
+        padding: 5px 25px;
+        border: 1px solid var(--color-gray-300);
+        border-radius: 100px;
+    }
+
+    .btn:hover {
+        border: 1.8px solid var(--color-gray-400);
+        color: var(--color-text);
+    }
+}
+
+section, footer {
+    padding: 30px 10px;
+}
+
+.pages {
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 15px;
+    
+    section {
+        width: 100%;
+        margin: 0;
+        transition: all 150ms ease-in-out;
+        border-top-left-radius: 90px 10px;
+        border-top-right-radius: 13px 130px;
+        border-bottom-left-radius: 10px 59px;
+        border-bottom-right-radius: 80px 24px;
+        padding: 30px;
+        border: solid 3px #6e7491;
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+    }
+}
+.pages:has(section:hover)
+section:not(:hover) {
+    filter: blur(4px);
+}
+
+section::before {
+    content: "";
+}
+
+.header {
+    background-image: url('../images/tangled.jpg');
+    height: 20vh;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 5px 15px;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 20px;
+}
+
+.btn:hover {
+    border-color: var(--color-gray-400);
+    font-weight: 500;
+}
+
+footer {
+    form {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    fieldset {
+        padding: 20px;
+        input, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 5px 0px;
+            background-color: white;
+            border: 1px solid var(--color-gray-400);
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+        button:hover {
+            border-color: #212121;
+            background-color: #212121;
+            color: white;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    nav {
+        padding: 15px 100px;
+    }
+    .hero {
+        padding: 30px 100px;
+
+        .title {
+            font-size: 48px;
+        }
+    }
+    .nav-title {
+        font-size: 32px;
+    }
+    .pages {
+        flex-direction: row;
+        padding: 0 100px;
+
+        section .title {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        
+    }
+}
