@@ -4,46 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
+    <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="resources/register.css">
 </head>
 <body>
-    <center>
-        <nav>
+    <nav class="flex">
+        <h1 class="nav-title">Aura's Website</h1>
+        <div class="">
             <a href="index.html">Home🏡</a>
             <a target="_blank" href="https://music.youtube.com/playlist?list=PLjtUA20YWjSPo3-rqhBBa_Ur42ce6laVW&si=nWdJbK2SWY6jzNlz">Music🎶</a>
-            <a href="tentang.html">🙋‍♀️</a>
-        </nav>
-    </center>
-    <hr>
-    <h1>Register akun baru🎉</h1>
-    <h3>Silahkan isi setiap field dengan benar.</h3>
-    <form action="#">
-        <fieldset>
-            <legend>Forum Registrasi</legend>
-            <label for="nama">
-                Masukkan nama anda
-            </label><br>
-            <input id="nama" type="text" name="nama" required><br><br>
-            <label for="email">
-                Masukkan email anda
-            </label><br>
-            <input id="email" type="email" name="email" required><br><br>
-            <label for="password">Masukkan password baru</label><br>
-            <input type="password" name="passwrod" id="password"><br><br>
-            <label for="kelas">Kelas</label><br>
-            <select name="kelas" id="kelas" required>
-                <option value="pilkoma">Pilkom A</option>
-                <option value="pilkomb">Pilkom B</option>
-            </select><br><br>
-            <label for="deskripsi-diri">
-                Masukkan deskrispi diri anda
-            </label><br>
-            <textarea name="deskripsi-diri" id="deskripsi-diri" placeholder="Tulis deskripsi anda disini..." required></textarea><br><br>
-            <label for="tanggal-lahir">
-                Masukkan tanggal lahir anda
-            </label><br>
-            <input id="tanggal-lahir" type="date" name="tanggal-lahir" required><br><br>
-            <button type="submit">Sign Up 🙋‍♀️</button>
-        </fieldset>
-    </form>
+            <a href="tentang.html">Tentang 🙋‍♀️</a>
+        </div>
+        <a class="btn" href="register.html">Sign Up</a>
+    </nav>
+    
+    <div class="row flex">
+        <div class="col">
+            <h1 class="title" style="text-align: center;">Register akun baru🎉</h1>
+            <h3 style="text-align: center; margin-top: 8px;">Silahkan isi setiap field dengan benar.</h3>
+        </div>
+        <form class="col" action="#">
+            <fieldset>
+                <legend>Forum Registrasi</legend>
+                <label for="nama">
+                    Masukkan nama anda
+                </label><br>
+                <input id="nama" type="text" name="nama" required>
+                <label for="email">
+                    Masukkan email anda
+                </label><br>
+                <input id="email" type="email" name="email" required>
+                <label for="password">Masukkan password baru</label><br>
+                <input type="password" name="passwrod" id="password">
+                <label for="kelas">Kelas</label><br>
+                <select name="kelas" id="kelas" required>
+                    <option value="pilkoma">Pilkom A</option>
+                    <option value="pilkomb">Pilkom B</option>
+                </select><br><br>
+                <label for="deskripsi-diri">
+                    Masukkan deskrispi diri anda
+                </label><br>
+                <textarea name="deskripsi-diri" id="deskripsi-diri" placeholder="Tulis deskripsi anda disini..." required></textarea>
+                <label for="tanggal-lahir">
+                    Masukkan tanggal lahir anda
+                </label><br>
+                <input id="tanggal-lahir" type="date" name="tanggal-lahir" required><br><br>
+                <button class="btn" type="submit">Sign Up 🙋‍♀️</button>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
