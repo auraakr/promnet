@@ -119,6 +119,26 @@ section::before {
     font-weight: 500;
 }
 
+.about {
+    text-align: center;
+    height: 85vh;
+    .card {
+        width: 350px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+    .card:hover {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    .btn {
+        border-radius: 7px;
+    }
+    .btn:hover {
+        background-color: var(--color-gray-400);
+    }
+}
+
 footer {
     form {
         margin: 0 auto;
@@ -159,6 +179,17 @@ footer {
 
         .title {
             font-size: 48px;
+        }
+    }
+    .about {
+        .title {
+            font-size: 36px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .card {
+            width: 550px;
         }
     }
     .nav-title {

@@ -77,6 +77,10 @@ nav {
         width: 220px;
     }
 
+    img:hover {
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
     .links {
         justify-content: center;
         gap: 20px;
@@ -127,6 +131,14 @@ section {
     }
 }
 
+.border-paper {
+    border-top-left-radius: 90px 10px;
+    border-top-right-radius: 13px 130px;
+    border-bottom-left-radius: 10px 59px;
+    border-bottom-right-radius: 80px 24px;
+    border: solid 3px #6e7491;
+}
+
 .galeri {
     padding: 20px 10px;
     width: 100%;
@@ -137,12 +149,7 @@ section {
         width: 100%;
         margin: 0;
         transition: all 150ms ease-in-out;
-        border-top-left-radius: 90px 10px;
-        border-top-right-radius: 13px 130px;
-        border-bottom-left-radius: 10px 59px;
-        border-bottom-right-radius: 80px 24px;
         padding: 35px;
-        border: solid 3px #6e7491;
         img {
             width: 100%;
             height: 220px;
@@ -184,6 +191,46 @@ footer {
             border-color: #212121;
             background-color: #212121;
             color: white;
+        }
+    }
+}
+
+.kontak {
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    gap: 30px;
+    padding: 0 10px;
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+
+        .card {
+            a {
+                width: 200px;
+                height: 180px;
+                justify-content: space-around;
+                align-content: space-around;
+                padding: 20px;
+                gap: 10px;
+                text-decoration: none;
+
+                img {
+                    width: 50px;
+                    border-radius: 15px;
+                }
+            }
+        }
+        .card:hover {
+            border: 3px dashed #6e7491;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+            h3 {
+                font-weight: bold;
+            }
         }
     }
 }
