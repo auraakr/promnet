@@ -78,12 +78,16 @@
             <fieldset>
                 <legend class="title">Kirim komentar</legend>
                 <label for="nama">Nama</label>
-                <input placeholder="Masukkan nama" type="text" id="nama" name="nama" required>
+                <input placeholder="Masukkan nama" type="text" id="nama" name="nama">
                 <label for="email">Email</label>
-                <input placeholder="Masukkan email" type="email" id="email" name="email" required>
+                <input placeholder="Masukkan email" type="email" id="email" name="email">
                 <label for="komentar">Kirim komentar</label>
-                <textarea name="komentar" id="komentar" placeholder="Ketik disini..." required></textarea><br>
-                <button type="submit">Kirim</button>
+                <textarea name="komentar" id="komentar" placeholder="Ketik disini..."></textarea><br>
+                
+                <small id="namaError" style="color: red;"></small><br>
+                <small id="emailError" style="color: red;"></small><br>
+                <small id="komentarError" style="color: red;"></small>
+                <button id="submit" type="submit">Kirim</button>
             </fieldset>
         </form>
     </footer>

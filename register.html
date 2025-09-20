@@ -6,6 +6,12 @@
     <title>Register Page</title>
     <link rel="stylesheet" href="resources/style.css">
     <link rel="stylesheet" href="resources/register.css">
+    <style>
+        select {
+            width: 100%;
+            padding: 6px 0;
+        }
+    </style>
 </head>
 <body>
     <nav class="flex">
@@ -23,7 +29,7 @@
             <h1 class="title" style="text-align: center;">Register akun baru🎉</h1>
             <h3 style="text-align: center; margin-top: 8px;">Silahkan isi setiap field dengan benar.</h3>
         </div>
-        <form class="col" action="#">
+        <form class="col" action="" id="registerForm">
             <fieldset>
                 <legend>Forum Registrasi</legend>
                 <label for="nama">
@@ -49,9 +55,11 @@
                     Masukkan tanggal lahir anda
                 </label><br>
                 <input id="tanggal-lahir" type="date" name="tanggal-lahir" required><br><br>
-                <button type="submit">Sign Up 🙋‍♀️</button>
+                <button id="submit" type="submit">Sign Up 🙋‍♀️</button>
             </fieldset>
         </form>
     </div>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
